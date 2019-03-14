@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- Vue -->
+  <script    src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> <!-- development version, includes helpful console warnings -->
+  <script srcXXX="https://cdn.jsdelivr.net/npm/vue"></script>          <!-- production version, optimized for size and speed -->
+
+  <title>VUE Başlangıç</title>
+</head>
+<body>
+  <div id="root">
+    <h1>{{ title }}</h1>
+    <h1>{{ sayi }}</h1>
+    <h1>{{ myArray[0] }}</h1>
+    <h1 v-html="MyCode" v-show="wantToShow" ></h1>
+    <h1 >{{ sayHi("Nuri") }}</h1>
+    <h1 v-show="false">{{ sayHi("Nuri") }}</h1>
+
+
+    https://www.udemy.com/vuejs-2-basics-in-just-1-hour-free/learn/v4/t/lecture/12391912?start=0
+
+  </div>
+</body>
+
+<script type="text/javascript">
+  var vm = new Vue({ // Debug yaparken vm.title = "değer" olarak kullanılabilir.
+    el: "#root",
+    data: {
+      title: "Vue Başlangıç",
+      sayi: 6,
+      MyCode: "<p>Text here!</p>",
+      wantToShow: true,
+      myArray: ["Nuri", 25, true],
+      myObject: [
+        {name: "Nuri", age: 27},
+        {name: "Ali", age: 28},
+        {name: "Ayşe", age: 29},
+      ]
+    },
+    methods: {
+      sayHi: function(isim) {
+        return "Hi " + isim;
+      }
+    }
+  })
+</script>
+
+</html>
