@@ -1,4 +1,6 @@
 # Vue Notlarım
+
+
 ```
 methods: {
   addItem(e) {
@@ -42,48 +44,4 @@ Komponentler arasında Eventler ile İletişim Kurmak: https://www.youtube.com/w
 - Nedir bu Vue.js 2? | #8 İç içe Geçmiş Komponentler ile Çalışmak
 - Nedir bu Vue.js 2? | #9 Komponentler arasında Eventler ile İletişim Kurmak
 
-
-
-## Webpack
-
-Webpack, projedeki .js, .css dosyalarının birleştirilip tek bir dosya haline getirilmesini sağlar
-
-
-```
-sudo npm install -g webpack
-
-npm init
-
-npm install jquery --save
-jquery'i yükler
-
-npm install css-loader style-loader --save-dev
-
-
-webpack app.js bundle.js
-app.js dosyasını işler ve bundle.js dosyasını üretir.
-
-webpack app.js bundle.js --watch
-app.js dosyasının her değişikliğinde otomatik olarak işler ve bundle.js dosyasını üretir.
-
-webpack
-webpack.config.js dosyasına tanım yapılırsa sadece webpack yazarak çalıştırılabilir
-
-
-npm run build
-webpack.config.js dosyasında "script" başlığı altına "build: 'webpack' " eklenirse artık webpack yazmak yerine "npm build" yazmak yeterli olacak
-
-
-sudo npm install -g webpack-dev-server --save-dev
-
-
-npm run start
-webpack.config.js dosyasında "script" başlığı altına "start: 'webpack-dev-server --entry ./src/js/app.js --output-file-name ./dist/budle.js' " eklenirse artık webpack yazmak yerine "npm start" yazmak yeterli olacak
-
-
-npm install babel-core babel-loadre babel-preset-es2015 --save-dev
-Babel yüklenmesi. es6'nın es5'e düşürülmesi için
-
-
-```
 
