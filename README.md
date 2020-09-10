@@ -45,3 +45,4 @@ Komponentler arasında Eventler ile İletişim Kurmak: https://www.youtube.com/w
 - Nedir bu Vue.js 2? | #9 Komponentler arasında Eventler ile İletişim Kurmak
 
 
+- [a-basic-introduction-to-webpack](https://blog.skay.dev/a-basic-introduction-to-webpack)
